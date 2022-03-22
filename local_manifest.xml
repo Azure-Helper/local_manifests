@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote name="alchemist"
+          fetch="https://github.com/Alchemist-xD" />
+
+  <remote name="extrasas"
+          fetch="https://github.com/ArrowOS" />
+
+  <remote name="extrasad"
+          fetch="https://github.com/ArrowOS-Devices" />
+  
+  <remote name="extrasls"
+          fetch="https://github.com/LineageOS" />
+
+  <!-- Trees -->
+        <project path="device/xiaomi/raphael" name="android_device_xiaomi_raphael" remote="alchemist" revision="twelve" />
+        <project path="vendor/xiaomi/raphael" name="android_vendor_xiaomi_raphael" remote="alchemist" revision="twelve" />
+        <project path="kernel/xiaomi/raphael" name="android_kernel_xiaomi_raphael" remote="alchemist" revision="twelve" />
+
+  <!-- Extra -->
+        <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="extrasad" revision="arrow-12.0" />
+        <project path="device/xiaomi/extras" name="android_device_xiaomi_extras" remote="extrasad" revision="arrow-12.0" />
+        <project path="packages/apps/GCamGOPrebuilt" name="android_packages_apps_GCamGOPrebuilt" remote="extrasad" revision="arrow-12.0" />
+        <project path="packages/resources/devicesettings" name="android_packages_resources_devicesettings" remote="extrasls" revision="lineage-19.0" />
+        
+  <!-- HALs Replacement -->	
+  
+</manifest>
