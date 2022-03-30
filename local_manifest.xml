@@ -27,16 +27,16 @@
     <!-- Toolchain -->
     
     <!-- Device Settings -->
-	<project name="android_packages_resources_devicesettings" path="packages/resources/devicesettings" remote="extrasls" revision="lineage-19.0" />
+	<project name="android_packages_resources_devicesettings" path="packages/resources/devicesettings" remote="lineage-os" revision="lineage-19.1" />
 
     <!-- Hardware Trees -->
-        <project name="android_hardware_xiaomi" path="hardware/xiaomi"  remote="extrasad" revision="arrow-12.0" />
+        <project name="android_hardware_xiaomi" path="hardware/xiaomi"  remote="lineage-os" revision="lineage-19.1" />
 	
     <!-- Extras -->
-	<project name="android_hardware_xiaomi" path="hardware/xiaomi"  remote="extrasad" revision="arrow-12.0" />
+	<project name="android_hardware_xiaomi" path="device/xiaomi/extras"  remote="arrow-devices" revision="arrow-12.0" />
 	
     <!-- GCamGO Prebuilt -->
-	<project name="android_packages_apps_GCamGOPrebuilt" path="packages/apps/GCamGOPrebuilt" remote="extrasad" revision="arrow-12.0" />
+	<project name="android_packages_apps_GCamGOPrebuilt" path="packages/apps/GCamGOPrebuilt" remote="arrow-devices" revision="arrow-12.0" />
 	 
     <!-- HALs Replacement -->	
 	
