@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-     <!-- Remotes -->
-	  <remote name="azure"
+    <!-- Remotes -->
+	<remote name="azure"
           fetch="https://github.com/AzureHelper" />
 
-    <remote name="arrow-os"
+        <remote name="arrow-os"
           fetch="https://github.com/ArrowOS" />
 
-    <remote name="arrow-devices"
+        <remote name="arrow-devices"
           fetch="https://github.com/ArrowOS-Devices" />
   
-    <remote name="lineage-os"
+        <remote name="lineage-os"
           fetch="https://github.com/LineageOS" />
 		  
   
@@ -24,20 +24,20 @@
     <!-- Proprietary Blobs -->
 	<project name="android_vendor_xiaomi_raphael" path="device/xiaomi/raphael" remote="azure" revision="twelve" />
 	
-	  <!-- Toolchain -->
+    <!-- Toolchain -->
     
-	  <!-- Device Settings -->
+    <!-- Device Settings -->
 	<project name="android_packages_resources_devicesettings" path="packages/resources/devicesettings" remote="extrasls" revision="lineage-19.0" />
 
     <!-- Hardware Trees -->
-    <project name="android_hardware_xiaomi" path="hardware/xiaomi"  remote="extrasad" revision="arrow-12.0" />
+        <project name="android_hardware_xiaomi" path="hardware/xiaomi"  remote="extrasad" revision="arrow-12.0" />
 	
-	  <!-- Extras -->
+    <!-- Extras -->
 	<project name="android_hardware_xiaomi" path="hardware/xiaomi"  remote="extrasad" revision="arrow-12.0" />
 	
-	  <!-- GCamGO Prebuilt -->
+    <!-- GCamGO Prebuilt -->
 	<project name="android_packages_apps_GCamGOPrebuilt" path="packages/apps/GCamGOPrebuilt" remote="extrasad" revision="arrow-12.0" />
 	 
-	  <!-- HALs Replacement -->	
+    <!-- HALs Replacement -->	
 	
 </manifest>
