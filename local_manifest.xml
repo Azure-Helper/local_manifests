@@ -13,19 +13,26 @@
   
         <remote name="lineage-os"
           fetch="https://github.com/LineageOS" />
+
+        <remote name="clang"
+          fetch="https://gitlab.com/Panchajanya1999" />
+
+        <remote name="kernel"
+          fetch="https://github.com/LuanHalaiko" />
 		  
   
     <!-- Device Tree -->
-	<project name="android_device_xiaomi_raphael" path="device/xiaomi/raphael" remote="azure" revision="twelve" />
+	<project name="android_device_xiaomi_raphael" path="device/xiaomi/raphael" remote="azure" revision="pixys-12.x" />
 	
     <!-- Kernel Source -->
-	<project name="android_kernel_xiaomi_raphael" path="kernel/xiaomi/raphael" remote="azure" revision="twelve" />
+	<project name="kernel_raphael_sm8150" path="kernel/xiaomi/raphael" remote="kernel" revision="raphael-unified" />
 
     <!-- Proprietary Blobs -->
 	<project name="android_vendor_xiaomi_raphael" path="vendor/xiaomi/raphael" remote="azure" revision="twelve" />
 	
     <!-- Toolchain -->
-    
+        <project name="azure-clang" path="prebuilts/clang/host/linux-x86/clang-azure"  remote="clang" revision="main" />
+
     <!-- Device Settings -->
 	<project name="android_packages_resources_devicesettings" path="packages/resources/devicesettings" remote="lineage-os" revision="lineage-19.1" />
 
@@ -39,5 +46,7 @@
 	<project name="android_packages_apps_GCamGOPrebuilt" path="packages/apps/GCamGOPrebuilt" remote="arrow-devices" revision="arrow-12.1" />
 	 
     <!-- HALs Replacement -->	
-	
+	<remove-project name="android_hardware_qcom_audio" />
+        <project name="android_hardware_qcom_audio" path="hardware/qcom-caf/sm8150/audio" remote="lineage-os" revision="lineage-19.1" />
+
 </manifest>
