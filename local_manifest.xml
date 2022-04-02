@@ -47,7 +47,14 @@
 	 
     <!-- HALs Replacement -->	
 	<remove-project name="android_hardware_qcom_audio" />
-        <project name="android_hardware_qcom_audio" path="hardware/qcom-caf/sm8150/audio" remote="lineage-os" revision="lineage-19.1" />
+        <project name="android_hardware_qcom_audio" path="hardware/qcom-caf/sm8150/audio" remote="lineage-os" revision="lineage-19.1-caf-sm8150" />
+
+        <remove-project name="android_hardware_qcom_display" />
+        <project name="android_hardware_qcom_display" path="hardware/qcom-caf/sm8150/display" remote="lineage-os" revision="lineage-19.1-caf-sm8150" />
+
+        <remove-project name="android_hardware_qcom_media" />
+        <project name="android_hardware_qcom_media" path="hardware/qcom-caf/sm8150/media" remote="lineage-os" revision="lineage-19.1-caf-sm8150" />
+
         <remove-project name="android_vendor_qcom_opensource_fm-commonsys" />
         <project name="android_vendor_qcom_opensource_fm-commonsys" path="vendor/qcom/opensource/fm-commonsys" remote="arrow-os" revision="arrow-12.1" />
 
