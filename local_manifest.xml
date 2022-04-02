@@ -48,5 +48,7 @@
     <!-- HALs Replacement -->	
 	<remove-project name="android_hardware_qcom_audio" />
         <project name="android_hardware_qcom_audio" path="hardware/qcom-caf/sm8150/audio" remote="lineage-os" revision="lineage-19.1" />
+        <remove-project name="android_vendor_qcom_opensource_fm-commonsys" />
+        <project name="android_vendor_qcom_opensource_fm-commonsys" path="vendor/qcom/opensource/fm-commonsys" remote="arrow-os" revision="arrow-12.1" />
 
 </manifest>
