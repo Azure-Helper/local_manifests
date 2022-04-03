@@ -57,5 +57,8 @@
 
         <remove-project name="android_vendor_qcom_opensource_fm-commonsys" />
         <project name="android_vendor_qcom_opensource_fm-commonsys" path="vendor/qcom/opensource/fm-commonsys" remote="arrow-os" revision="arrow-12.1" />
+        
+        <remove-project name="device_qcom_sepolicy_vndr" />
+        <project name="android_device_qcom_sepolicy_vndr" path="device/qcom/sepolicy_vndr" remote="lineage-os" revision="lineage-19.1" />
 
 </manifest>
