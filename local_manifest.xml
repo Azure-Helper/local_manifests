@@ -18,14 +18,14 @@
           fetch="https://gitlab.com/Panchajanya1999" />
 
         <remote name="kernel"
-          fetch="https://github.com/LuanHalaiko" />
+          fetch="https://github.com/SOVIET-ANDROID" />
 		  
   
     <!-- Device Tree -->
 	<project name="android_device_xiaomi_raphael" path="device/xiaomi/raphael" remote="azure" revision="pixys-12.x" />
 	
     <!-- Kernel Source -->
-	<project name="kernel_raphael_sm8150" path="kernel/xiaomi/raphael" remote="kernel" revision="raphael-unified" />
+	<project name="kernel_xiaomi_raphael" path="kernel/xiaomi/raphael" remote="kernel" revision="12.1" />
 
     <!-- Proprietary Blobs -->
 	<project name="android_vendor_xiaomi_raphael" path="vendor/xiaomi/raphael" remote="azure" revision="twelve" />
