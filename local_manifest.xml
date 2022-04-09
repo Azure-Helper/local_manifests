@@ -34,7 +34,7 @@
         <project name="azure-clang" path="prebuilts/clang/host/linux-x86/clang-azure" remote="clang" revision="main" />
 
     <!-- Device Settings -->
-	<project name="android_packages_resources_devicesettings" path="packages/resources/devicesettings" remote="lineage-os" revision="lineage-19.1" />
+	<project name="android_packages_resources_devicesettings" path="packages/resources/devicesettings" remote="arrow-os" revision="arrow-12.1" />
 
     <!-- Hardware Trees -->
         <project name="android_hardware_xiaomi" path="hardware/xiaomi" remote="lineage-os" revision="lineage-19.1" />
