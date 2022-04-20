@@ -4,14 +4,20 @@
     <!-- Remotes -->
 	<remote name="azure"
           fetch="https://github.com/AzureHelper" />
+        
+        <remote name="psos"
+         fetch="https://github.com/PixysOS" />
 
-        <remote name="arrow-os"
+        <remote name="psds"
+         fetch="https://github.com/PixysOS-Devices" />
+
+        <remote name="awos"
           fetch="https://github.com/ArrowOS" />
 
-        <remote name="arrow-devices"
+        <remote name="awds"
           fetch="https://github.com/ArrowOS-Devices" />
   
-        <remote name="lineage-os"
+        <remote name="leos"
           fetch="https://github.com/LineageOS" />
 
         <remote name="clang"
@@ -22,19 +28,19 @@
 		  
   
     <!-- Device Tree -->
-	<project name="android_device_xiaomi_raphael" path="device/xiaomi/raphael" remote="azure" revision="pixys-12.x" />
+	<project name="device_xiaomi_raphael" path="device/xiaomi/raphael" remote="psds" revision="12.x" />
 	
     <!-- Kernel Source -->
-	<project name="kernel_xiaomi_raphael" path="kernel/xiaomi/raphael" remote="kernel" revision="12.1" />
+	<project name="kernel_xiaomi_raphael" path="kernel/xiaomi/raphael" remote="psds" revision="twelve-PELT" />
 
     <!-- Proprietary Blobs -->
-	<project name="android_vendor_xiaomi_raphael" path="vendor/xiaomi/raphael" remote="azure" revision="twelve" />
+	<project name="vendor_xiaomi_raphael" path="vendor/xiaomi/raphael" remote="psds" revision="12.x" />
 	
     <!-- Toolchain -->
         <project name="azure-clang" path="prebuilts/clang/host/linux-x86/clang-azure" remote="clang" revision="main" />
 
     <!-- Device Settings -->
-	<project name="android_packages_resources_devicesettings" path="packages/resources/devicesettings" remote="arrow-os" revision="arrow-12.1" />
+	<project name="packages_resources_devicesettings" path="packages/resources/devicesettings" remote="psos" revision="twelve" />
 
     <!-- Hardware Trees -->
         <project name="android_hardware_xiaomi" path="hardware/xiaomi" remote="lineage-os" revision="lineage-19.1" />
@@ -45,20 +51,4 @@
     <!-- GCamGO Prebuilt -->
 	<project name="android_packages_apps_GCamGOPrebuilt" path="packages/apps/GCamGOPrebuilt" remote="arrow-devices" revision="arrow-12.1" />
 	 
-    <!-- HALs Replacement -->	
-	<remove-project name="android_hardware_qcom_audio" />
-        <project name="android_hardware_qcom_audio" path="hardware/qcom-caf/sm8150/audio" remote="lineage-os" revision="lineage-19.1-caf-sm8150" />
-
-        <remove-project name="android_hardware_qcom_display" />
-        <project name="android_hardware_qcom_display" path="hardware/qcom-caf/sm8150/display" remote="lineage-os" revision="lineage-19.1-caf-sm8150" />
-
-        <remove-project name="android_hardware_qcom_media" />
-        <project name="android_hardware_qcom_media" path="hardware/qcom-caf/sm8150/media" remote="lineage-os" revision="lineage-19.1-caf-sm8150" />
-
-        <remove-project name="android_vendor_qcom_opensource_fm-commonsys" />
-        <project name="android_vendor_qcom_opensource_fm-commonsys" path="vendor/qcom/opensource/fm-commonsys" remote="arrow-os" revision="arrow-12.1" />
-        
-        <remove-project name="device_qcom_sepolicy_vndr" />
-        <project name="android_device_qcom_sepolicy_vndr" path="device/qcom/sepolicy_vndr" remote="lineage-os" revision="lineage-19.1" />
-
 </manifest>
