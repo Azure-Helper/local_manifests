@@ -3,7 +3,7 @@
 
     <!-- Remotes -->
 	<remote name="azure"
-          fetch="https://github.com/AzureHelper" />
+          fetch="https://github.com/Azure-Helper" />
         
         <remote name="psos"
          fetch="https://github.com/PixysOS" />
