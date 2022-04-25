@@ -31,6 +31,6 @@
 	<project name="vendor_xiaomi_raphael" path="vendor/xiaomi/raphael" remote="azure" revision="wip" />
 	
     <!-- Hardware Trees -->
-        <project name="android_hardware_xiaomi" path="hardware/xiaomi" remote="lineage-os" revision="lineage-19.1" />
+        <project name="android_hardware_xiaomi" path="hardware/xiaomi" remote="leos" revision="lineage-19.1" />
 
 </manifest>	
