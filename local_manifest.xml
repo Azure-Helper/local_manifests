@@ -29,7 +29,6 @@
         <project path="kernel/xiaomi/raphael" name="kernel_xiaomi_raphael" remote="azurehelper" revision="sapphire" />
 
   <!-- Extra -->
-       <project path="device/xiaomi/raphael-sepolicy" name="AOSPA_backup" remote="atxd" revision="sapphire-seo" />
        <project path="packages/resources/devicesettings" name="android_packages_resources_devicesettings" remote="extrasls" revision="lineage-19.1" />
 
   <!-- HALs Replacement -->
