@@ -1,12 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remote name="azure"
-          fetch="https://github.com/AzurE-007" />
-          
-  <remote name="atxd"
-          fetch="https://github.com/Alchemist-xD" />" />
-  
   <remote name="azurehelper"
           fetch="https://github.com/Azure-Helper" />
 
@@ -25,7 +19,7 @@
 
   <!-- Trees -->
         <project path="device/xiaomi/raphael" name="android_device_xiaomi_raphael" remote="azurehelper" revision="sapphire-wip" />
-        <project path="vendor/xiaomi/raphael" name="vendor_xiaomi_raphael" remote="azure" revision="ruby" />
+        <project path="vendor/xiaomi/raphael" name="vendor_xiaomi_raphael" remote="azurehelper" revision="sapphire" />
         <project path="kernel/xiaomi/raphael" name="kernel_xiaomi_raphael" remote="azurehelper" revision="sapphire" />
 
   <!-- Extra -->
