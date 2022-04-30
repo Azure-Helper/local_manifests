@@ -1,31 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remote name="azurehelper"
+    <!-- Remotes -->
+	<remote name="azurehelper"
           fetch="https://github.com/Azure-Helper" />
- 
-  <remote name="extrasad"
+
+        <remote name="azure"
+          fetch="https://github.com/AzurE-007" />
+        
+        <remote name="psos"
+         fetch="https://github.com/PixysOS" />
+
+        <remote name="psds"
+         fetch="https://github.com/PixysOS-Devices" />
+
+        <remote name="awos"
+          fetch="https://github.com/ArrowOS" />
+
+        <remote name="awds"
           fetch="https://github.com/ArrowOS-Devices" />
   
-  <remote name="extrasls"
+        <remote name="leos"
           fetch="https://github.com/LineageOS" />
 
-  <remote name="extrapd"
-          fetch="https://github.com/PixysOS-Devices" />
-  
-  <remote name="clang"
+        <remote name="clang"
           fetch="https://gitlab.com/Panchajanya1999" />
 
-  <!-- Trees -->
-        <project path="device/xiaomi/raphael" name="device_xiaomi_raphael" remote="azurehelper" revision="test" />
-        <project path="vendor/xiaomi/raphael" name="vendor_xiaomi_raphael" remote="azurehelper" revision="main" />
-        <project path="kernel/xiaomi/raphael" name="kernel_xiaomi_raphael" remote="extrapd" revision="twelve" />
+        <remote name="kernel"
+          fetch="https://github.com/SOVIET-ANDROID" />
+		  
+  
+    <!-- Device Tree -->
+	<project name="device_xiaomi_raphael" path="device/xiaomi/raphael" remote="azurehelper" revision="test" />
+	
+    <!-- Kernel Source -->
+	<project name="kernel_xiaomi_raphael" path="kernel/xiaomi/raphael" remote="psds" revision="twelve" />
 
-  <!-- Extra -->
-       <project path="prebuilts/clang/host/linux-x86/clang-azure" name="azure-clang" revision="main" remote="clang" />
-       <project path="packages/resources/devicesettings" name="android_packages_resources_devicesettings" remote="extrasls" revision="lineage-19.1" />
-       <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="extrasls" revision="lineage-19.1" />
-       <project path="device/xiaomi/extras" name="android_device_xiaomi_extras"  remote="extrasad" revision="arrow-12.0" />
-  <!-- HALs Replacement -->
-       
+    <!-- Proprietary Blobs -->
+	<project name="vendor_xiaomi_raphael" path="vendor/xiaomi/raphael" remote="azurehelper" revision="main" />
+	
+    <!-- Toolchain -->
+        <project name="azure-clang" path="prebuilts/clang/host/linux-x86/clang-azure" remote="clang" revision="main" />
+
+    <!-- Device Settings -->
+	<project name="packages_resources_devicesettings" path="packages/resources/devicesettings" remote="azure" revision="twelve" />
+
+    <!-- Hardware Trees -->
+        <project name="android_hardware_xiaomi" path="hardware/xiaomi" remote="leos" revision="lineage-19.1" />
+	
+    <!-- Extras -->
+	<project name="android_device_xiaomi_extras" path="device/xiaomi/extras" remote="azure" revision="twelve" />
+	
 </manifest>
