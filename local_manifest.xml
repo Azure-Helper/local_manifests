@@ -28,8 +28,6 @@
 		  
   
     <!-- Device Tree -->
-        <remove-project name="device_xiaomi_mido_1" />
-        <remove-project name="device_xiaomi_mido" />
 	<project name="device_xiaomi_raphael" path="device/xiaomi/raphael" remote="psds" revision="twelve" />
 	
     <!-- Kernel Source -->
