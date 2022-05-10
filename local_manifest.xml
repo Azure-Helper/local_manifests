@@ -7,8 +7,8 @@
   <remote name="extrasas"
           fetch="https://github.com/ArrowOS" />
 
-  <remote name="extrasad"
-          fetch="https://github.com/ArrowOS-Devices" />
+  <remote name="wadiehabib"
+          fetch="https://github.com/wadiehabib" />
   
   <remote name="extrasls"
           fetch="https://github.com/LineageOS" />
@@ -20,7 +20,9 @@
   <!-- Trees -->
         <project path="device/xiaomi/raphael" name="android_device_xiaomi_raphael" remote="azurehelper" revision="sapphire-wip" />
         <project path="vendor/xiaomi/raphael" name="vendor_xiaomi_raphael" remote="azurehelper" revision="sapphire" />
-        <project path="kernel/xiaomi/raphael" name="kernel_xiaomi_raphael" remote="azurehelper" revision="sapphire" />
+        <project path="kernel/xiaomi/raphael" name="kernel_xiaomi_raphael" remote="wadiehabib" revision="snaplight" />
+  <!-- Device Settings -->
+        <project path="prebuilts/clang/host/linux-x86/clang-proton" name="proton-clang" remote="clang" revision="master" />
 
   <!-- Device Settings -->
        <project path="packages/resources/devicesettings" name="android_packages_resources_devicesettings" remote="extrasls" revision="lineage-19.1" />
