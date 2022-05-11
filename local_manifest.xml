@@ -7,9 +7,6 @@
   <remote name="azuretest"
           fetch="https://github.com/AzurE-007" />
 
-  <remote name="wadiehabib"
-          fetch="https://github.com/wadiehabib" />
-  
   <remote name="extrasls"
           fetch="https://github.com/LineageOS" />
   
@@ -20,10 +17,7 @@
   <!-- Trees -->
         <project name="signtest" path="device/xiaomi/raphael" remote="azuretest" revision="test" />
         <project name="vendor_xiaomi_raphael" path="vendor/xiaomi/raphael" remote="azuretest" revision="test" />
-        <project name="kernel_xiaomi_raphael" path="kernel/xiaomi/raphael" remote="wadiehabib" revision="snaplight" />
-
-  <!-- Clang -->
-        <project name="proton-clang" path="prebuilts/clang/host/linux-x86/clang-proton" remote="clang" revision="master" />
+        <project name="kernel_xiaomi_raphael" path="kernel/xiaomi/raphael" remote="azurehelper" revision="sapphire" />
 
   <!-- Device Settings -->
        <project name="android_packages_resources_devicesettings" path="packages/resources/devicesettings" remote="extrasls" revision="lineage-19.1" />
