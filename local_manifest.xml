@@ -25,7 +25,7 @@
 	<remove-project name="AOSPA/android_vendor_aospa" />
 	<project path="frameworks/base" name="android_frameworks_base" remote="azuretest" revision="sapphire" />
 	<project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="azuretest" revision="sapphire" />
-	<project path="vendor/aospa" name="android_vendor_aospa" remote="azuretest" revision="sapphire" />
+	<project path="vendor/aospa" name="android_vendor_aospa" remote="azuretest" revision="sapphire" > <linkfile src="build.sh" dest="rom-build.sh" /> </project>
 
   <!-- Device Settings -->
        <project name="android_packages_resources_devicesettings" path="packages/resources/devicesettings" remote="extrasls" revision="lineage-19.1" />
