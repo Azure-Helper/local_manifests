@@ -18,11 +18,19 @@
         <project name="signtest" path="device/xiaomi/raphael" remote="azuretest" revision="test" />
         <project name="vendor_xiaomi_raphael" path="vendor/xiaomi/raphael" remote="azuretest" revision="test" />
         <project name="kernel_xiaomi_raphael" path="kernel/xiaomi/raphael" remote="azurehelper" revision="sapphire" />
+  
+  <!-- Extras -->
+        <remove-project name="AOSPA/android_frameworks_base" />
+	<remove-project name="AOSPA/android_packages_apps_Settings" />
+	<remove-project name="AOSPA/android_vendor_aospa" />
+	<project path="frameworks/base" name="android_frameworks_base" remote="azuretest" revision="test" />
+	<project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="azuretest" revision="test" />
+	<project path="vendor/aospa" name="android_vendor_aospa" remote="azuretest" revision="test" />
 
   <!-- Device Settings -->
        <project name="android_packages_resources_devicesettings" path="packages/resources/devicesettings" remote="extrasls" revision="lineage-19.1" />
 
   <!-- Hardware Trees -->
-       <project name="android_hardware_xiaomi" path="hardware/xiaomi" remote="extrasls" revision="lineage-19.1" />
+       <project name="android_hardware_xiaomi" path="hardware/xiaomi" remote="extras" revision="lineage-19.1" />
 	
 </manifest>
