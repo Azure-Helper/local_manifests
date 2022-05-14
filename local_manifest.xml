@@ -58,7 +58,5 @@
   
        <remove-project name="platform/vendor/nxp/opensource/hidlimpl" />
        <project name="platform/vendor/nxp/opensource/hidlimpl" path="vendor/nxp/opensource/hidlimpl" remote="pf_nfc"/>
-       <remove-project name="platform/vendor/nxp/interfaces/opensource/nfc" />
-       <project name="platform/vendor/nxp/interfaces/opensource/nfc" path="vendor/nxp/opensource/interfaces/nfc" remote="pf_nfc"/>
-      
+
 </manifest>
