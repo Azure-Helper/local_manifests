@@ -7,9 +7,6 @@
   <remote name="azuretest"
           fetch="https://github.com/AzurE-007" />
   
-  <remote name="aospa"
-          fetch="https://github.com/AOSPA" />
-
   <remote name="extrasls"
           fetch="https://github.com/LineageOS" />
   
