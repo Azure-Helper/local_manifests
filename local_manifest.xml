@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
+  <remote name="pf_nfc"
+          fetch="https://git.codelinaro.org/clo/la"
+          review="codelinaro.org"
+          revision="refs/tags/LA.UM.9.12.r1-14100-SMxx50.0"/>
+
+  <remote name="404"
+          fetch="https://github.com/P-404/"
+          revision="shinka" />
+
   <remote name="azurehelper"
           fetch="https://github.com/Azure-Helper" />
 
@@ -38,5 +47,17 @@
 
   <!-- Hardware Trees -->
        <project name="AOSPA/android_hardware_xiaomi" path="hardware/xiaomi" remote="aospa" revision="sapphire" />
+       
+   <!-- NFC -->
+      <remove-project name="platform/vendor/nxp/opensource/external/libnfc-nci" />
+      <project path="vendor/nxp/opensource/commonsys/external/libnfc-nci" name="android_vendor_nxp_opensource_external_libnfc-nci" remote="404"/>
+  
+     <remove-project name="AOSPA/android_vendor_nxp_opensource_halimpl" />
+     <project path="vendor/nxp/opensource/halimpl" name="android_vendor_nxp_opensource_halimpl" remote="404">
+     <linkfile dest="vendor/qcom/defs/product-defs/vendor/nfc-vendor-product.mk" src="nfc_vendor_product.mk"/>
+     </project>
+  
+     <remove-project name="platform/vendor/nxp/opensource/hidlimpl" />
+      <project name="platform/vendor/nxp/opensource/hidlimpl" path="vendor/nxp/opensource/hidlimpl" remote="pf_nfc"/>
 	
 </manifest>
