@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remote name="aospa"
+  <remote name="azurehelper"
           fetch="https://github.com/Azure-Helper" />
 
   <remote name="azuretest"
           fetch="https://github.com/AzurE-007" />
   
-  <remote name="azuretest"
+  <remote name="aospa"
           fetch="https://github.com/AOSPA" />
 
   <remote name="extrasls"
