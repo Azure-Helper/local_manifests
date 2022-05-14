@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remote name="azurehelper"
+  <remote name="aospa"
           fetch="https://github.com/Azure-Helper" />
 
   <remote name="azuretest"
           fetch="https://github.com/AzurE-007" />
+  
+  <remote name="azuretest"
+          fetch="https://github.com/AOSPA" />
 
   <remote name="extrasls"
           fetch="https://github.com/LineageOS" />
@@ -37,6 +40,6 @@
        <project name="android_packages_resources_devicesettings" path="packages/resources/devicesettings" remote="extrasls" revision="lineage-19.1" />
 
   <!-- Hardware Trees -->
-       <project name="android_hardware_xiaomi" path="hardware/xiaomi" remote="extrasls" revision="lineage-19.1" />
+       <project name="AOSPA/android_hardware_xiaomi" path="hardware/xiaomi" remote="aospa" revision="sapphire" />
 	
 </manifest>
