@@ -35,12 +35,12 @@
         <project path="hardware/qcom/media" name="AOSPA/android_hardware_qcom_media" remote="aospa" revision="sapphire-855"/>
 
   <!-- Extras -->
-        <remove-project name="AOSPA/android_frameworks_base" />
-	<remove-project name="AOSPA/android_packages_apps_Settings" />
-	<remove-project name="AOSPA/android_vendor_aospa" />
-	<project path="frameworks/base" name="android_frameworks_base" remote="azuretest" revision="sapphire" />
-	<project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="azuretest" revision="sapphire" />
-	<project path="vendor/aospa" name="android_vendor_aospa" remote="azuretest" revision="sapphire" > <linkfile src="build.sh" dest="rom-build.sh" /> </project>
+       <remove-project name="AOSPA/android_frameworks_base" />
+       <remove-project name="AOSPA/android_packages_apps_Settings" />
+       <remove-project name="AOSPA/android_vendor_aospa" />
+       <project path="frameworks/base" name="android_frameworks_base" remote="azuretest" revision="sapphire" />
+       <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="azuretest" revision="sapphire" />
+       <project path="vendor/aospa" name="android_vendor_aospa" remote="azuretest" revision="sapphire" > <linkfile src="build.sh" dest="rom-build.sh" /> </project>
 
   <!-- Device Settings -->
        <project name="android_packages_resources_devicesettings" path="packages/resources/devicesettings" remote="extrasls" revision="lineage-19.1" />
@@ -48,16 +48,25 @@
   <!-- Hardware Trees -->
        <project name="AOSPA/android_hardware_xiaomi" path="hardware/xiaomi" remote="aospa" revision="sapphire" />
        
-   <!-- NFC -->
-      <remove-project name="platform/vendor/nxp/opensource/external/libnfc-nci" />
-      <project path="vendor/nxp/opensource/commonsys/external/libnfc-nci" name="android_vendor_nxp_opensource_external_libnfc-nci" remote="404"/>
+  <!-- NFC -->
+       <remove-project name="platform/vendor/nxp/opensource/external/libnfc-nci" />
+       <project path="vendor/nxp/opensource/commonsys/external/libnfc-nci" name="android_vendor_nxp_opensource_external_libnfc-nci" remote="404"/>
+       <remove-project name="AOSPA/android_vendor_nxp_opensource_halimpl" />
+       <project path="vendor/nxp/opensource/halimpl" name="android_vendor_nxp_opensource_halimpl" remote="404">
+       <linkfile dest="vendor/qcom/defs/product-defs/vendor/nfc-vendor-product.mk" src="nfc_vendor_product.mk"/>
+       </project>
   
-     <remove-project name="AOSPA/android_vendor_nxp_opensource_halimpl" />
-     <project path="vendor/nxp/opensource/halimpl" name="android_vendor_nxp_opensource_halimpl" remote="404">
-     <linkfile dest="vendor/qcom/defs/product-defs/vendor/nfc-vendor-product.mk" src="nfc_vendor_product.mk"/>
-     </project>
-  
-     <remove-project name="platform/vendor/nxp/opensource/hidlimpl" />
-      <project name="platform/vendor/nxp/opensource/hidlimpl" path="vendor/nxp/opensource/hidlimpl" remote="pf_nfc"/>
-	
+       <remove-project name="platform/vendor/nxp/opensource/hidlimpl" />
+       <project name="platform/vendor/nxp/opensource/hidlimpl" path="vendor/nxp/opensource/hidlimpl" remote="pf_nfc"/>
+       <remove-project name="platform/vendor/nxp/interfaces/opensource/nfc" />
+       <project name="platform/vendor/nxp/interfaces/opensource/nfc" path="vendor/nxp/opensource/interfaces/nfc" remote="pf_nfc"/>
+       <remove-project name="platform/vendor/nxp/opensource/external/libnfc-nci" />
+       <project name="platform/vendor/nxp/opensource/external/libnfc-nci" path="vendor/nxp/opensource/commonsys/external/libnfc-nci" remote="pf_nfc"/>
+       <remove-project name="platform/vendor/nxp/opensource/frameworks" />
+       <project name="platform/vendor/nxp/opensource/frameworks" path="vendor/nxp/opensource/commonsys/frameworks" remote="pf_nfc"/>
+       <remove-project name="platform/vendor/nxp/opensource/packages/apps/Nfc" />
+       <project name="platform/vendor/nxp/opensource/packages/apps/Nfc" path="vendor/nxp/opensource/commonsys/packages/apps/Nfc" remote="pf_nfc">
+       <linkfile dest="vendor/qcom/defs/product-defs/system/nfc-system-product.mk" src="nfc_system_product.mk"/>
+       </project>
+      
 </manifest>
