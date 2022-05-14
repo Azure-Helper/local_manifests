@@ -60,13 +60,5 @@
        <project name="platform/vendor/nxp/opensource/hidlimpl" path="vendor/nxp/opensource/hidlimpl" remote="pf_nfc"/>
        <remove-project name="platform/vendor/nxp/interfaces/opensource/nfc" />
        <project name="platform/vendor/nxp/interfaces/opensource/nfc" path="vendor/nxp/opensource/interfaces/nfc" remote="pf_nfc"/>
-       <remove-project name="platform/vendor/nxp/opensource/external/libnfc-nci" />
-       <project name="platform/vendor/nxp/opensource/external/libnfc-nci" path="vendor/nxp/opensource/commonsys/external/libnfc-nci" remote="pf_nfc"/>
-       <remove-project name="platform/vendor/nxp/opensource/frameworks" />
-       <project name="platform/vendor/nxp/opensource/frameworks" path="vendor/nxp/opensource/commonsys/frameworks" remote="pf_nfc"/>
-       <remove-project name="platform/vendor/nxp/opensource/packages/apps/Nfc" />
-       <project name="platform/vendor/nxp/opensource/packages/apps/Nfc" path="vendor/nxp/opensource/commonsys/packages/apps/Nfc" remote="pf_nfc">
-       <linkfile dest="vendor/qcom/defs/product-defs/system/nfc-system-product.mk" src="nfc_system_product.mk"/>
-       </project>
       
 </manifest>
