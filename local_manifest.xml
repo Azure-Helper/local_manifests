@@ -4,6 +4,9 @@
   <remote name="azurehelper"
           fetch="https://github.com/Azure-Helper" />
 
+  <remote name="extrasls"
+          fetch="https://github.com/LineageOS" />
+
   <!-- Trees -->
         <project name="device_xiaomi_raphael" path="device/xiaomi/raphael" remote="azurehelper" revision="pa" />
         <project name="vendor_xiaomi_raphael" path="vendor/xiaomi/raphael" remote="azurehelper" revision="pa" />
@@ -14,8 +17,9 @@
 	<project path="hardware/qcom/display" name="AOSPA/android_hardware_qcom_display" remote="aospa" revision="sapphire-855"/>
         <project path="hardware/qcom/gps" name="AOSPA/android_hardware_qcom_gps" remote="aospa" revision="sapphire-855"/>
         <project path="hardware/qcom/media" name="AOSPA/android_hardware_qcom_media" remote="aospa" revision="sapphire-855"/>
+        <project name="AOSPA/android_hardware_xiaomi" path="hardware/xiaomi" remote="aospa" revision="sapphire" />
 
-  <!-- Hardware Trees -->
-       <project name="AOSPA/android_hardware_xiaomi" path="hardware/xiaomi" remote="aospa" revision="sapphire" />
+        <remove-project name="platform/vendor/qcom-opensource/fm-commonsys" />
+        <project name="android_hardware_qcom_fm" path="hardware/qcom/fm" remote="extrasls" revision="lineage-17.0" />
 
 </manifest>
