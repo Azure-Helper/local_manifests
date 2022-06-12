@@ -23,7 +23,7 @@
         <project name="AOSPA/android_hardware_xiaomi" path="hardware/xiaomi" remote="aospa" revision="sapphire" />
 
         <remove-project name="AOSPA/android_vendor_aospa" />
-	<project path="vendor/aospa" name="android_vendor_aospa" remote="azurehelper" revision="sapphire" > <linkfile src="build.sh" dest="rom-build.sh" /> </project>
+	<project path="vendor/aospa" name="android_vendor_aospa" remote="azurehelper" revision="sapphire-staging" > <linkfile src="build.sh" dest="rom-build.sh" /> </project>
 
         <remove-project name="platform/vendor/qcom-opensource/fm-commonsys" />
         <project name="android_hardware_qcom_fm" path="hardware/qcom/fm" remote="extrasls" revision="lineage-17.0" />
