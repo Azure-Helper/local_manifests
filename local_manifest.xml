@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
+  <remote name="azure"
+          fetch="https://github.com/AzurE-007" />
+
   <remote name="azurehelper"
           fetch="https://github.com/Azure-Helper" />
 
@@ -20,12 +23,15 @@
 	<project path="hardware/qcom/display" name="AOSPA/android_hardware_qcom_display" remote="aospa" revision="sapphire-855"/>
         <project path="hardware/qcom/gps" name="AOSPA/android_hardware_qcom_gps" remote="aospa" revision="sapphire-855"/>
         <project path="hardware/qcom/media" name="AOSPA/android_hardware_qcom_media" remote="aospa" revision="sapphire-855"/>
-        <project name="AOSPA/android_hardware_xiaomi" path="hardware/xiaomi" remote="aospa" revision="sapphire" />
+        <project path="hardware/xiaomi" name="AOSPA/android_hardware_xiaomi" remote="aospa" revision="sapphire" />
 
         <remove-project name="AOSPA/android_vendor_aospa" />
 	<project path="vendor/aospa" name="android_vendor_aospa" remote="azurehelper" revision="sapphire-staging" > <linkfile src="build.sh" dest="rom-build.sh" /> </project>
 
         <remove-project name="platform/vendor/qcom-opensource/fm-commonsys" />
-        <project name="android_hardware_qcom_fm" path="hardware/qcom/fm" remote="extrasls" revision="lineage-17.0" />
+        <project path="hardware/qcom/fm" name="android_hardware_qcom_fm" remote="extrasls" revision="lineage-17.0" />
+        
+        <remove-project name="AOSPA/android_external_f2fs-tools" />
+        <project path="external/f2fs-tools" name="android_external_f2fs-tools" remote="azure" revision="sapphire" />
 
 </manifest>
