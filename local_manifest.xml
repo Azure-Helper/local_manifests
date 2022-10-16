@@ -5,32 +5,28 @@
 	<remote name="azure"
           fetch="https://github.com/Azure-Helper" />
 
-        <remote name="atxd"
-          fetch="https://github.com/Alchemist-xD" />
-
-        <remote name="awds"
-          fetch="https://github.com/ArrowOS-Devices" />
-  
-        <remote name="leos"
-          fetch="https://github.com/LineageOS" />
-
-        <remote name="clang"
-          fetch="https://gitlab.com/Panchajanya1999" />
-
-        <remote name="kernel"
-          fetch="https://github.com/SOVIET-ANDROID" />
-		  
-  
+        <remote name="sm8150"
+          fetch="https://github.com/xiaomi-sm8150-devs" />
+       
+        <remote name="muppets"
+           fetch="https://gitlab.com/the-muppets" />
+       
+        <remote name="lineage"
+           fetch="https://github.com/LineageOS" />
+    
+    <!-- Common Tree -->
+	<project name="android_device_xiaomi_sm8150-common" path="device/xiaomi/sm8150-common" remote="sm8150" revision="lineage-19.1" />
+	
     <!-- Device Tree -->
-	<project name="device_xiaomi_raphael" path="device/xiaomi/raphael" remote="azure" revision="fork" />
+	<project name="device_xiaomi_raphael" path="device/xiaomi/raphael" remote="azure" revision="lineage-19.1" />
 	
     <!-- Kernel Source -->
-	<project name="android_kernel_xiaomi_raphael" path="kernel/xiaomi/raphael" remote="atxd" revision="main" />
+	<project name="android_kernel_xiaomi_sm8150-legacy" path="kernel/xiaomi/sm8150-legacy" remote="sm8150" revision="lineage-19.1" />
 
     <!-- Proprietary Blobs -->
-	<project name="vendor_xiaomi_raphael" path="vendor/xiaomi/raphael" remote="azure" revision="main" />
+	<project name="proprietary_vendor_xiaomi" path="vendor/xiaomi" remote="muppets" revision="lineage-19.1" />
 	
     <!-- Hardware Trees -->
-        <project name="android_hardware_xiaomi" path="hardware/xiaomi" remote="leos" revision="lineage-19.1" />
+        <project name="android_hardware_xiaomi" path="hardware/xiaomi" remote="lineage" revision="lineage-19.1" />
 
 </manifest>
