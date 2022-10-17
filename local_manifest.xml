@@ -18,7 +18,7 @@
 	<project name="android_device_xiaomi_sm8150-common" path="device/xiaomi/sm8150-common" remote="sm8150" revision="lineage-19.1" />
 	
     <!-- Device Tree -->
-	<project name="device_xiaomi_raphael" path="device/xiaomi/raphael" remote="azure" revision="lineage-19.1" />
+	<project name="android_device_xiaomi_raphael" path="device/xiaomi/raphael" remote="azure" revision="lineage-19.1" />
 	
     <!-- Kernel Source -->
 	<project name="android_kernel_xiaomi_sm8150-legacy" path="kernel/xiaomi/sm8150-legacy" remote="sm8150" revision="lineage-19.1" />
