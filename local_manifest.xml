@@ -13,6 +13,13 @@
        
         <remote name="lineage"
            fetch="https://github.com/LineageOS" />
+
+        <remote name="aod"
+           fetch="https://github.com/ArrowOS-Devices" />
+
+        <remote name="aop"
+           fetch="https://gitlab.com/arrowos-project" />
+
     
     <!-- Common Tree -->
 	<project name="android_device_xiaomi_sm8150-common" path="device/xiaomi/sm8150-common" remote="sm8150" revision="lineage-19.1" />
@@ -28,5 +35,10 @@
 	
     <!-- Hardware Trees -->
         <project name="android_hardware_xiaomi" path="hardware/xiaomi" remote="lineage" revision="lineage-19.1" />
+
+    <!-- Clang -->
+        <project path="prebuilts/clang/host/linux-x86/clang-r416183b1" name="android_prebuilts_clang_host_linux-x86_clang-r416183b1" remote="aod" revision="arrow-11.0" />
+        <project path="prebuilts/clang/host/linux-x86/clang-r437112b" name="android_prebuilts_clang_host_linux-x86_clang-r437112b" remote="aop" revision="master" />
+
 
 </manifest>
