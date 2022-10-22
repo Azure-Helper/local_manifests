@@ -25,8 +25,11 @@
         <project path="hardware/qcom/media" name="AOSPA/android_hardware_qcom_media" remote="aospa" revision="topaz-855"/>
         <project path="hardware/xiaomi" name="AOSPA/android_hardware_xiaomi" remote="aospa" revision="topaz" />
 
+  <!-- Forks -->
         <remove-project name="AOSPA/android_vendor_aospa" />
-	<project path="vendor/aospa" name="android_vendor_aospa"  <linkfile src="build.sh" dest="rom-build.sh" /> </project> 
+	<project path="vendor/aospa" name="android_vendor_aospa" remote="par" revision="topaz" >
+          <linkfile src="build.sh" dest="rom-build.sh" />
+        </project> 
         
         <remove-project name="AOSPA/android_build" />
         <project path="build/make" name="android_build" remote="par" revision="topaz" >
