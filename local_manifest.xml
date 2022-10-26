@@ -7,6 +7,9 @@
   <remote name="par"
           fetch="https://github.com/paranoid-raphael" />
 
+  <remote name="xcd"
+          fetch="https://github.com/X-CODE69" />
+
   <!-- Trees -->
         <project name="device_xiaomi_raphael" path="device/xiaomi/raphael" remote="xcd" revision="topaz" />
         <project name="vendor_xiaomi_raphael" path="vendor/xiaomi/raphael" remote="xcd" revision="topaz" />   
