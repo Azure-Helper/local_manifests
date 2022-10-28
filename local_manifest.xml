@@ -21,10 +21,13 @@
         <project path="hardware/qcom/gps" name="AOSPA/android_hardware_qcom_gps" remote="aospa" revision="topaz-855"/>
         <project path="hardware/qcom/media" name="AOSPA/android_hardware_qcom_media" remote="aospa" revision="topaz-855"/>
         <project path="hardware/xiaomi" name="AOSPA/android_hardware_xiaomi" remote="aospa" revision="topaz" />
+        <project path="vendor/nxp/opensource/halimpl" name="AOSPA/android_vendor_nxp_opensource_halimpl" remote="aospa" revision="topaz-SN100X-legacy">
+          <linkfile dest="vendor/qcom/defs/product-defs/vendor/nfc-vendor-product.mk" src="nfc_vendor_product.mk"/>
+        </project>
 
   <!-- Forks -->
         <remove-project name="AOSPA/android_vendor_aospa" />
-	<project path="vendor/aospa" name="android_vendor_aospa" remote="par" revision="topaz" >
+	<project path="vendor/aospa" name="android_vendor_aospa" remote="par" revision="topaz">
           <linkfile src="build.sh" dest="rom-build.sh" />
         </project> 
         
