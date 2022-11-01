@@ -44,7 +44,7 @@
         <project path="frameworks/base" name="android_frameworks_base" remote="par" revision="topaz"/>
        
         <remove-project name="AOSPA/android_packages_apps_Settings" />
-        <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="aospa" revision="topaz"/>
+        <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="par" revision="topaz"/>
   
         <remove-project name="AOSPA/android_packages_apps_ParanoidHub" />
         <project path="packages/apps/ParanoidHub" name="android_packages_apps_ParanoidHub" remote="par" revision="main" />            
