@@ -10,9 +10,6 @@
   <remote name="pag"
           fetch="https://github.com/pa-gr" />
 
-  <remote name="rds"
-          fetch="https://github.com/rd-stuffs" />
-
   <remote name="xcd"
           fetch="https://github.com/X-CODE69" />
 
@@ -37,7 +34,7 @@
 
   <!-- Forks -->
         <remove-project name="AOSPA/android_vendor_aospa" />
-	<project path="vendor/aospa" name="android_vendor_aospa" remote="par" revision="topaz-staging">
+	<project path="vendor/aospa" name="android_vendor_aospa" remote="par" revision="topaz-gr">
           <linkfile src="build.sh" dest="rom-build.sh" />
         </project>
      
