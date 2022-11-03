@@ -20,9 +20,9 @@
   
   <!-- HAL's -->
         <project path="vendor/qcom/opensource/audio-hal/primary-hal" name="AOSPA/android_hardware_qcom_audio" remote="github" revision="topaz-855"/>    	
-	<project path="hardware/qcom/display" name="AOSPA/android_hardware_qcom_display" remote="github" revision="topaz-855"/>
+	<project path="hardware/qcom/display" name="p404-vayu/android_hardware_qcom_display" remote="github" revision="arrow-12.1-caf-sm8150"/>
         <project path="hardware/qcom/gps" name="AOSPA/android_hardware_qcom_gps" remote="github" revision="topaz-855"/>
-        <project path="hardware/qcom/media" name="AOSPA/android_hardware_qcom_media" remote="github" revision="topaz-855"/>
+        <project path="hardware/qcom/media" name="p404-vayu/android_hardware_qcom_media" remote="github" revision="arrow-12.1-caf-sm8150"/>
         <project path="hardware/xiaomi" name="AOSPA/android_hardware_xiaomi" remote="github" revision="topaz" />
         <remove-project name="platform/vendor/nxp/opensource/halimpl"/>
         <project path="vendor/nxp/opensource/halimpl" name="AOSPA/android_vendor_nxp_opensource_halimpl" remote="github" revision="topaz-SN100X-legacy">
@@ -30,7 +30,5 @@
         </project>
         <remove-project name="platform/vendor/nxp/opensource/hidlimpl"/>
         <project path="vendor/nxp/opensource/hidlimpl" name="android_vendor_nxp_opensource_hidlimpl" remote="par" revision="topaz-SN100X-legacy"/>
-
-  <!-- Forks -->
 
 </manifest>
