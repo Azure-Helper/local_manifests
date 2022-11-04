@@ -13,6 +13,9 @@
   <remote name="bug"
           fetch="https://github.com/back-up-git" />
 
+  <remote name="clang"
+          fetch="https://gitlab.com/ImSurajxD"/>       
+
   <!-- Trees -->
         <project name="device_xiaomi_raphael" path="device/xiaomi/raphael" remote="xcd" revision="tokui" />
         <project name="vendor_xiaomi_raphael" path="vendor/xiaomi/raphael" remote="xcd" revision="topaz" />
@@ -32,6 +35,6 @@
         <project path="vendor/nxp/opensource/hidlimpl" name="android_vendor_nxp_opensource_hidlimpl" remote="par" revision="topaz-SN100X-legacy"/>
    
   <!-- Clang-->
-        <project path="ImSurajxD/prebuilts/clang/host/linux-x86/clang-r450784d" name="clang-r450784d" remote="gitlab" revision="master"/>
+        <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="clang-r450784d" remote="clang" revision="master"/>
    
 </manifest>
