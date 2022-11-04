@@ -30,5 +30,8 @@
         </project>
         <remove-project name="platform/vendor/nxp/opensource/hidlimpl"/>
         <project path="vendor/nxp/opensource/hidlimpl" name="android_vendor_nxp_opensource_hidlimpl" remote="par" revision="topaz-SN100X-legacy"/>
-
+   
+  <!-- Clang-->
+        <project path="ImSurajxD/prebuilts/clang/host/linux-x86/clang-r450784d" name="clang-r450784d" remote="gitlab" revision="master"/>
+   
 </manifest>
