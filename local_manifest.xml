@@ -34,5 +34,7 @@
 	<project path="vendor/aospa" name="android_vendor_aospa" remote="par" revision="topaz">
           <linkfile src="build.sh" dest="rom-build.sh" />
         </project>
+
+        <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="ImSurajxD/clang-r450784d" remote="gitlab" revision="master"/>
      
 </manifest>
