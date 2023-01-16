@@ -13,6 +13,9 @@
   <remote name="bug"
           fetch="https://github.com/back-up-git" />
 
+  <remote name="los"
+          fetch="https://github.com/LineageOS" />
+
   <!-- Trees -->
         <project name="device_xiaomi_raphael" path="device/xiaomi/raphael" remote="xcd" revision="topaz" />
         <project name="vendor_xiaomi_raphael" path="vendor/xiaomi/raphael" remote="xcd" revision="topaz" />
@@ -35,5 +38,7 @@
           <linkfile src="build.sh" dest="rom-build.sh" />
         </project>
         <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="ImSurajxD/clang-r450784d" remote="gitlab" revision="master"/>
-     
+        <remove-project name="platform/vendor/qcom-opensource/fm-commonsys" />
+        <project path="hardware/qcom/fm" name="android_hardware_qcom_fm" remote="los" revision="lineage-17.0"/>
+        <remove-project name="AOSPA/android_hardware_lineage_compat" />
 </manifest>
