@@ -41,7 +41,4 @@
         <remove-project name="platform/vendor/qcom-opensource/fm-commonsys" />
         <project path="hardware/qcom/fm" name="android_hardware_qcom_fm" remote="los" revision="lineage-17.0"/>
         <remove-project name="AOSPA/android_hardware_lineage_compat" />
-        <remove-project name="platform/development" />
-        <remove-project name="platform/external/swiftshader" />
-        <remove-project name="platform/prebuilts/cmdline-tools" />
 </manifest>
