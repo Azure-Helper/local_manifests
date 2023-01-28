@@ -16,10 +16,10 @@
   <remote name="los"
           fetch="https://github.com/LineageOS" />
 
-  <!-- Trees -->
+  <!-- Trees >
         <project name="device_xiaomi_raphael" path="device/xiaomi/raphael" remote="xcd" revision="topaz" />
         <project name="vendor_xiaomi_raphael" path="vendor/xiaomi/raphael" remote="xcd" revision="topaz" />
-        <project name="device_xiaomi_raphael-kernel" path="kernel/msm-4.14" remote="xcd" revision="topaz" />
+        <project name="device_xiaomi_raphael-kernel" path="kernel/msm-4.14" remote="xcd" revision="topaz" / -->
   
   <!-- HAL's -->
         <project path="vendor/qcom/opensource/audio-hal/primary-hal" name="AOSPA/android_hardware_qcom_audio" remote="aospa" revision="topaz-855"/>    	
@@ -48,4 +48,12 @@
           <linkfile dest="vendor/qcom/defs/product-defs/system/display-product-system.mk" src="config/display-product-system.mk"/>
           <linkfile dest="vendor/qcom/defs/product-defs/vendor/display-interfaces-product.mk" src="config/display-interfaces-product.mk"/>
         </project>
+        <remove-project name="platform/external/tensorflow" />
+        <remove-project name="platform/packages/apps/DocumentsUI" />
+        <remove-project name="platform/packages/apps/TV" />
+        <remove-project name="platform/packages/modules/CellBroadcastService" />
+        <remove-project name="platform/packages/providers/DownloadProvider" />
+        <remove-project name="platform/packages/services/Car" />
+        <remove-project name="platform/test/mlts/models" />
+        <remove-project name="platform/prebuilts/module_sdk/conscrypt" />
 </manifest>
