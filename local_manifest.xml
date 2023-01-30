@@ -10,9 +10,6 @@
   <remote name="xcd"
           fetch="https://github.com/X-CODE69" />
 
-  <remote name="bug"
-          fetch="https://github.com/back-up-git" />
-
   <remote name="los"
           fetch="https://github.com/LineageOS" />
 
@@ -23,7 +20,8 @@
   
   <!-- HAL's -->
         <project path="vendor/qcom/opensource/audio-hal/primary-hal" name="AOSPA/android_hardware_qcom_audio" remote="aospa" revision="topaz-855"/>    	
-	<project path="hardware/qcom/display" name="AOSPA-miatoll/android_hardware_qcom_display" remote="github" revision="topaz-lmao"/>        <project path="hardware/qcom/gps" name="AOSPA/android_hardware_qcom_gps" remote="aospa" revision="topaz-855"/>
+	<project path="hardware/qcom/display" name="AOSPA-miatoll/android_hardware_qcom_display" remote="github" revision="topaz-lmao"/>
+        <project path="hardware/qcom/gps" name="AOSPA/android_hardware_qcom_gps" remote="aospa" revision="topaz-855"/>
         <project path="hardware/qcom/media" name="AOSPA/android_hardware_qcom_media" remote="aospa" revision="topaz-855"/>
         <project path="hardware/xiaomi" name="AOSPA/android_hardware_xiaomi" remote="aospa" revision="topaz" />
         <project path="vendor/nxp/opensource/halimpl" name="AOSPA/android_vendor_nxp_opensource_halimpl" remote="aospa" revision="topaz-SN100X-legacy">
@@ -40,7 +38,7 @@
         <remove-project name="platform/vendor/qcom-opensource/fm-commonsys" />
         <project path="hardware/qcom/fm" name="android_hardware_qcom_fm" remote="los" revision="lineage-17.0"/>
         <remove-project name="AOSPA/android_hardware_lineage_compat" />
-                <remove-project name="AOSPA/android_vendor_qcom-opensource_display-commonsys" />
+        <remove-project name="AOSPA/android_vendor_qcom-opensource_display-commonsys" />
         <project path="vendor/qcom/opensource/commonsys/display" name="AOSPA-miatoll/android_vendor_qcom-opensource_display-commonsys" remote="github" revision="topaz"/>
         <remove-project name="AOSPA/android_vendor_qcom_opensource_commonsys-intf_display" />
         <project path="vendor/qcom/opensource/commonsys-intf/display" name="AOSPA-miatoll/android_vendor_qcom_opensource_commonsys-intf_display" remote="github" revision="topaz">
