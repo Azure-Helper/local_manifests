@@ -38,6 +38,13 @@
         <remove-project name="platform/vendor/qcom-opensource/fm-commonsys" />
         <project path="hardware/qcom/fm" name="android_hardware_qcom_fm" remote="los" revision="lineage-17.0"/>
         <remove-project name="AOSPA/android_hardware_lineage_compat" />
-        <remove-project name="AOSPA/android_build" />
-        <project path="build/make" name="android_build" remote="par" revision="topaz"/>
+        <remove-project name="platform/build_repo" />
+        <project path="build/make" name="AOSPA/android_build" remote="par" revision="topaz">
+          <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+          <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+          <linkfile src="core" dest="build/core" />
+          <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+          <linkfile src="target" dest="build/target" />
+           <linkfile src="tools" dest="build/tools" />
+        </project>
 </manifest>
